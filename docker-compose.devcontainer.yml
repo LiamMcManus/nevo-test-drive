@@ -1,0 +1,10 @@
+services:
+  backend:
+    environment:
+      DEV_MODE: "true"
+    entrypoint: [ "tail", "-f", "/dev/null" ]
+
+  frontend:
+    environment:
+      DEV_MODE: "true"
+    entrypoint: [ "tail", "-f", "/dev/null" ]

@@ -1,0 +1,22 @@
+{
+    "name": "Nevo Test Drive Dev",
+    "dockerComposeFile": [
+      "../docker-compose.yml",
+      "../docker-compose.devcontainer.yml"
+    ],
+    "service": "backend",
+    "workspaceFolder": "/usr/src/app",
+    "remoteEnv": {
+      "DEV_MODE": "true"
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash"
+        },
+        "extensions": ["dbaeumer.vscode-eslint"],
+        "postCreateCommand": "npm install"
+      }
+    }
+  }
+  
